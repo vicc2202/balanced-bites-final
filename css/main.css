@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@font-face {
+    font-family: Philosopher;
+    src: url(../fonts/Philosopher-BoldItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(to right, #BCD329, #93a80d);
+}
+
+.hero-main {
+    display: flex;
+    padding-top: 3rem;
+}
+
+.hero-main>div {
+    flex: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    font-family: Philosopher;
+}
+
+.nutricion {
+    font-size: 3.5rem;
+    color: rgb(5, 50, 58);
+} 
+
+.balanced {
+    font-size: 6rem;
+    transition: .5s;
+    color: #0e4538;
+    text-shadow: 0 4px 4px  rgb(5, 50, 58);
+}
+
+.balanced:hover {
+    transform: scale(1.1);
+}
+
+.hero-text h3 {
+    font-size: 1.9rem;
+    
+    color: rgb(5, 50, 58);
+} 
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3.5rem;
+}
+
+.hero-img img {
+    width: 620px;
+    transform: rotate(25deg);
+    transition: .7s;
+    filter: drop-shadow(30px 30px  20px rgb(38, 49, 31));
+}
+
+.hero-img img:hover {
+    transform: rotate(-10deg) ;
+}
+ 
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+button {
+    border: 0;
+    font-size: 1.2rem;
+    background-color: #7a8919;
+    border-radius: 8px;
+    display: flex;
+    padding: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.visita {
+    color: white;
+}
+
+.visita:hover {
+    color:#0e4538;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 0 0;
+    align-items: baseline;
+    background-image: linear-gradient(to right, #BCD329, #93a80d);
+}
+
+.menu-sitio {
+    display: flex;
+}
+
+.menu {
+    list-style-type: none;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    gap: 2rem;
+}
+
+.menu-item-logo {
+    font-family: Philosopher;
+    font-size: 2.5rem;
+}
+
+.menu-item {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.6rem;   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.745);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 5.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion1 {
+    padding: 0 6rem 0 6rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr ;
+    grid-template-areas: 
+    "seccion1-parrafo1 seccion1-imagen seccion1-parrafo3"
+    "seccion1-parrafo2 seccion1-imagen seccion1-parrafo4"
+    ;
+    gap: 1rem;
+    text-align: center;
+}
+
+.seccion1-parrafo1 {
+    grid-area: seccion1-parrafo1;
+}
+
+.seccion1-parrafo3 {
+    grid-area: seccion1-parrafo3;
+}
+
+.seccion1-parrafo2 {
+    grid-area: seccion1-parrafo2;
+}
+
+.seccion1-imagen {
+    grid-area: seccion1-imagen;
+    max-width: 450px;
+    padding-top: 2rem;
+}
+
+.seccion1-parrafo4 {
+    grid-area: seccion1-parrafo4;
+}
+
+.boton-listo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2rem;
+    padding-inline: 2rem;
+    color: white;
+}
+
+.boton-listo>button {
+    background-color: #f8f8f8;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.boton-listo>button:hover {
+    background-color: #0e4538;
+}
+
+.seccion2-h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: #f4f1ea;
+    padding-top: 1.1rem;
+}
+
+.seccion2-h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.seccion2 {
+    background-image: linear-gradient(to bottom, #f4f1ea, white);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 0.2fr 2fr 0.2fr 2fr;
+    grid-template-rows: 0.1fr 1.1fr 1.1fr;
+    grid-template-areas: 
+    "hormonas        flecha1 nutrientes        flecha2 rendimiento"
+    "imagen-hormonas flecha1 imagen-nutrientes flecha2 imagen-rendimiento"
+    "texto-hormonas            flecha1                   texto-nutrientes          flecha2                   texto-rendimiento"
+    ;
+}
+
+.hormonas {
+    grid-area: hormonas;
+}
+
+.imagen-hormonas {
+    grid-area: imagen-hormonas;
+    max-width: 320px;
+    margin-inline: 4rem;
+}
+
+.texto-hormonas {
+    grid-area: texto-hormonas;
+    background-color: #EDE9E1;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.flecha1 {
+    grid-area: flecha1;
+    font-size: 2.5rem;
+    padding-top: 8rem;
+}
+
+.nutrientes {
+    grid-area: nutrientes;
+}
+
+.imagen-nutrientes {
+    grid-area: imagen-nutrientes;
+    max-width: 320px;
+    margin-inline: 4rem;
+}
+
+.texto-nutrientes {
+    grid-area: texto-nutrientes;
+    background-color: #EDE9E1;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.flecha2 {
+    grid-area: flecha2;
+    font-size: 2.5rem;
+    padding-top: 8rem;
+}
+
+.rendimiento {
+    grid-area: rendimiento;
+}
+
+.imagen-rendimiento {
+    grid-area: imagen-rendimiento;
+    max-width: 320px;
+    margin-inline: 4rem;
+}
+
+.texto-rendimiento {
+    grid-area: texto-rendimiento;
+    background-color: #EDE9E1;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.cierre-nuestros-objetivos {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    
+}
+
+
+.seccion3 {
+    background-image: linear-gradient(to bottom, white, #e2e0da);
+    margin-top: 6rem;
+    padding-bottom: 3rem;
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 0.1fr 0.3fr 1fr ;  
+    grid-template-areas: 
+    "arbol alimentacion-titulo"
+    "arbol alimentacion-texto1"
+    "arbol alimentacion-texto2"
+    ;
+    row-gap: 1rem;
+}
+
+.arbol {
+    max-width: 600px;
+    grid-area: arbol;
+    margin-left: 1.5rem;
+    filter: drop-shadow(0 30px  20px rgb(38, 49, 31));
+}
+
+.alimentacion-titulo {
+    grid-area: alimentacion-titulo;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.alimentacion-texto1 {
+    grid-area: alimentacion-texto1;
+    margin-right: 2rem;
+}
+
+.alimentacion-texto2 {
+    grid-area: alimentacion-texto2;
+    margin-right: 2rem;
+}
+
+.cetogenica {
+    transform: translate(115px,-355px) rotate(10deg); 
+    max-width: 100px;
+}
+
+.cetogenica-texto {
+    background-color: transparent;
+    color: white;
+}
+
+.vegetariana {
+    transform: translate(430px,-380px) rotate(-11deg);
+    max-width: 100px;
+}
+
+.vegetariana-texto {
+    background-color: transparent;
+    color: white;
+}
+
+.paleo {
+    transform: translate(315px, -420px);
+    max-width: 100px;
+}
+
+.paleo-texto {
+    background-color:transparent;
+    color: white;
+}
+
+.vegana {
+    transform: translate(230px, -390px) rotate(-8deg);
+    max-width: 100px;
+}
+
+.vegana-texto {
+    background-color: transparent;
+    color: white;
+}
+
+.tiroides {
+    transform: translate(315px, -365px) rotate(-9deg);
+    max-width: 100px;
+}
+
+.tiroides-texto {
+    background-color: transparent;
+    color: white;
+}
+
+.caja-dietas {
+    position: absolute;
+}
+
+.caja-ilustraciones {
+    position: absolute;
+}
+
+.pasto {
+    max-width: 650px;
+    transform: translate(770px, -200px);
+    filter: drop-shadow(30px 30px  20px rgb(38, 49, 31));
+}
+
+.tronco {
+    max-width: 400px;
+    transform: translate(230px, -179px) rotate(-6deg)
+}
+
+.caja-boton-dietas {
+    position: absolute;
+    transform: translate(990px,-95px);
+    
+}
+
+.caja-boton-dietas>button {
+    background-color: #46341C;
+    color: white;
+}
+
+.caja-boton-dietas>button:hover {
+    background-color: #5C4525;
+}
+
+.seccion4 {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-inline: 2rem;
+    background-image: linear-gradient(to bottom, #e2e0da, white);
+}
+
+.caja-ilustraciones-comida {
+    position: absolute;
+}
+
+.comida1 {
+    max-width: 400px;
+    transform: translate(0, -240px);
+}
+
+.comida2 {
+    max-width: 400px;
+    transform: translate(715px, -550px);
+}
+
+.seccion4-titulo {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 5rem;
+}
+
+.seccion4-texto1 {
+    max-width: 1200px;
+    
+}
+
+.seccion4-titulo2 {
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 300;
+}
+
+.seccion4-texto2 {
+    text-align: center;
+    max-width: 1200px;
+    margin-inline: 4.5rem;
+}
+
+.seccion4-titulo3 {
+    font-weight: 300;
+    padding-top: 2rem;
+    margin-right: 2rem;
+    text-align: end;
+
+}
+
+.seccion4-texto3 {
+    text-align: end;
+    margin-left: 10rem;
+    margin-right: 1rem;
+}
+
+.boton-recetas {
+    transform: translate(1000px,-350px);
+    max-width: 250px;
+    color: white;
+}
+
+.boton-recetas>button {
+    font-size: 1.5rem;
+    background-color: #9e1e26;
+}
+
+.boton-recetas>button>span>a {
+    color: white;
+}
+
+.seccion5 {
+    margin-top: 15rem;
+    padding-bottom: 5rem;
+    background-image: linear-gradient(to top, #e2e0da, white);
+}
+
+.seccion5-grilla {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+    padding-inline: 1.5rem;
+    display: grid;
+    grid-template-columns: 2 fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: 
+    "seccion5-titulo seccion5-titulo"
+    "seccion5-texto1 seccion5-texto1"
+    "seccion5-titulo2 seccion5-imagen"
+    "seccion5-texto2 seccion5-imagen"
+    "seccion5-titulo3 seccion5-imagen"
+    "seccion5-texto3  seccion5-imagen"
+    "seccion5-titulo4 seccion5-imagen"
+    "seccion5-texto4  seccion5-imagen"
+    ;
+    row-gap: 1rem;
+    
+}
+
+.seccion5-titulo {
+    grid-area: seccion5-titulo;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.seccion5-imagen {
+    grid-area: seccion5-imagen;
+    max-width: 600px;
+    filter: drop-shadow(10px 10px  10px rgb(38, 49, 31));
+}
+
+.seccion5-texto1 {
+    grid-area: seccion5-texto1;
+    text-align: center;
+}
+
+.seccion5-titulo2 {
+    grid-area: seccion5-titulo2;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.seccion5-texto2 {
+    grid-area: seccion5-texto2;
+    font-size: 1.3rem;
+}
+
+.seccion5-titulo3 {
+    grid-area: seccion5-titulo3;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.seccion5-texto3 {
+    grid-area: seccion5-texto3;
+    font-size: 1.3rem;
+}
+
+.seccion5-titulo4 {
+    grid-area: seccion5-titulo4;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.seccion5-texto4 {
+    grid-area: seccion5-texto4;
+    font-size: 1.3rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    max-width: 2000px;
+    background-color: #7a8919;
+    padding: 1rem;
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.3rem;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.nav-pages {
+    display: flex;
+    justify-content: space-between;
+    justify-items: baseline;
+    background-color: #93a80d;
+}
+
+.titulo1-objetivos {
+    font-family: Philosopher;
+    font-weight: 300 ;
+    padding-bottom: 1rem;
+}
+
+.main-objetivos {
+    transform: translate(0px, -35px);
+    font-family: "Nunito Sans", sans serif;
+    margin-inline: 2rem;
+}
+
+.main-objetivos>section>article>p {
+    font-size: 1.3rem;
+}
+
+.objetivos-texto1 {
+    text-align: center;
+}
+
+.objetivos-h2 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding-top: 2rem;
+}
+
+.ojetivos-h2-fundamentos {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.objetivos-texto2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.objetivos-impacto-texto {
+   padding-bottom: 2rem;
+}
+
+.link-estudios:hover {
+    color: #0e4538;
+}
+
+.titulo1-alimentacion {
+    font-family: Philosopher;
+    font-weight: 300 ;
+}
+
+.main-alimentacion {
+    transform: translate(0px, -35px);
+    font-family: "Nunito Sans", sans serif;
+    margin-inline: 2rem;
+    font-size: 1.3rem;
+}
+
+.texto-alimentacion {
+    padding-block: 0.8rem;
+}
+
+.main-recetas {
+    transform: translate(0px, -35px);
+    font-family: "Nunito Sans", sans serif;
+    margin-inline: 2rem;
+    font-size: 1.3rem;
+}
+
+.titulo1-recetas {
+    font-family: Philosopher;
+
+}
+
+.recetas-h2 {
+    font-weight: 300;
+}
+
+.main-recetas>section>article>p {
+    padding-block: 0.5rem;
+}
+
+.recetas-h3 {
+    font-weight: 300;
+}
+
+.facebook {
+    color: white;
+}
+
+.alimentacion-h2 {
+    font-weight: 400;
+}
+
+.caja-recetas {
+    display: grid;
+    padding-top: 2rem;
+    margin-left: 12rem;
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 0.1fr 1fr 0.1fr 0.1fr 1fr;
+    grid-template-areas: 
+    "pan-keto-titulo       imagen-pan-keto"
+    "ingredientes-pan-keto imagen-pan-keto"
+    "lista-pan-keto        imagen-pan-keto"
+    "imagen-crema          crema-titulo"
+    "imagen-crema          ingredientes-crema"
+    "imagen-crema          lista-crema"
+    "tofu-titulo           imagen-tofu"
+    "ingredientes-tofu     imagen-tofu"
+    "tofu-lista            imagen-tofu"
+    ;
+}
+
+.pan-keto-titulo {
+    grid-area: pan-keto-titulo;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.imagen-pan-keto {
+    grid-area: imagen-pan-keto;
+}
+
+.ingredientes-pan-keto {
+    grid-area: ingredientes-pan-keto;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.lista-pan-keto {
+    grid-area: lista-pan-keto;
+}
+
+.crema-titulo {
+    grid-area: crema-titulo;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.imagen-crema {
+    grid-area: imagen-crema;
+}
+
+.ingredientes-crema {
+    grid-area: ingredientes-crema;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.lista-crema {
+    grid-area: lista-crema;
+}
+
+.tofu-titulo {
+    grid-area: tofu-titulo; 
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.imagen-tofu {
+    grid-area: imagen-tofu;
+}
+
+.ingredientes-tofu {
+    grid-area: ingredientes-tofu;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.tofu-lista {
+    grid-area: tofu-lista;
+}
+
+.imagen-pan-keto, .imagen-crema, .imagen-tofu {
+    max-width: 350px;
+}
+
+.main-contacto {
+    transform: translate(0px, -35px);
+}
+
+.contactoFormu {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.intro-section {
+    text-align: center;
+    background-color: #45864b;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.intro-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.intro-section h1 {
+    font-size: 2rem;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.text-section {
+    font-family: "Nunito Sans", sans serif;
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.text-section p {
+    font-family: "Nunito Sans", sans serif;
+    margin-bottom: 20px;
+}
+
+.text-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-section {
+    font-family: "Nunito Sans", sans serif;
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #463f13;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
