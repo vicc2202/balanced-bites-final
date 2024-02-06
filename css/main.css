@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .hero {
@@ -54,7 +53,6 @@
 
 .hero-text h3 {
     font-size: 1.9rem;
-    
     color: rgb(5, 50, 58);
 } 
 
@@ -76,34 +74,34 @@
     transform: rotate(-10deg) ;
 }
  
-.boton {
+.caja-boton {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
+    
 }
 
-button {
+.boton-visita {
     border: 0;
     font-size: 1.2rem;
     background-color: #7a8919;
     border-radius: 8px;
-    display: flex;
     padding: 6px;
     cursor: pointer;
     transition: .5s;
 }
 
-button:hover {
+.boton-visita:hover {
     transform: scale(1.1);
 }
 
 .visita {
-    color: white;
+    color:#0e4538;
 }
 
 .visita:hover {
-    color:#0e4538;
+    color: white;
 }
 
 .nav {
@@ -191,28 +189,37 @@ h1 {
     grid-area: seccion1-parrafo4;
 }
 
-.boton-listo {
+.caja-boton-listo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    justify-items: center;
+}
+
+.boton-listo {
+    font-family: "Nunito Sans", sans serif;
+    border: 0;
+    border-radius: 8px;
     margin-bottom: 2rem;
-    padding-inline: 2rem;
-    color: white;
-}
-
-.boton-listo>button {
+    color: black;
     background-color: #f8f8f8;
-    color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .5s;
+    padding: 8px;
 }
 
-.boton-listo>button:hover {
+.listo:hover {
+    font-size: 1.4rem;
+    color: white;
     background-color: #0e4538;
+    transform: scale(1.1);
+    border-radius: 8px;
+    padding: 8px;
 }
+
 
 .seccion2-h2 {
     font-family: "Nunito Sans", sans-serif;
+    color: #0e4538;
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
@@ -233,11 +240,11 @@ h1 {
     text-align: center;
     display: grid;
     grid-template-columns: 2fr 0.2fr 2fr 0.2fr 2fr;
-    grid-template-rows: 0.1fr 1.1fr 1.1fr;
+    grid-template-rows: 0.1fr 1fr 0.8fr;
     grid-template-areas: 
     "hormonas        flecha1 nutrientes        flecha2 rendimiento"
     "imagen-hormonas flecha1 imagen-nutrientes flecha2 imagen-rendimiento"
-    "texto-hormonas            flecha1                   texto-nutrientes          flecha2                   texto-rendimiento"
+    "texto-hormonas  flecha1 texto-nutrientes  flecha2 texto-rendimiento"
     ;
 }
 
@@ -247,7 +254,7 @@ h1 {
 
 .imagen-hormonas {
     grid-area: imagen-hormonas;
-    max-width: 320px;
+    max-width: 300px;
     margin-inline: 4rem;
 }
 
@@ -271,7 +278,7 @@ h1 {
 
 .imagen-nutrientes {
     grid-area: imagen-nutrientes;
-    max-width: 320px;
+    max-width: 300px;
     margin-inline: 4rem;
 }
 
@@ -294,7 +301,7 @@ h1 {
 
 .imagen-rendimiento {
     grid-area: imagen-rendimiento;
-    max-width: 320px;
+    max-width: 300px;
     margin-inline: 4rem;
 }
 
@@ -314,45 +321,48 @@ h1 {
     
 }
 
-
 .seccion3 {
-    background-image: linear-gradient(to bottom, white, #e2e0da);
-    margin-top: 6rem;
-    padding-bottom: 3rem;
+    background-image: url(../images/seccion3.png);
+    background-repeat: no-repeat;
+    margin-top: 3.4rem;
     font-family: "Nunito Sans", sans serif;
     font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;  
-    grid-template-rows: 0.1fr 0.3fr 1fr ;  
-    grid-template-areas: 
-    "arbol alimentacion-titulo"
-    "arbol alimentacion-texto1"
-    "arbol alimentacion-texto2"
-    ;
-    row-gap: 1rem;
-}
-
-.arbol {
-    max-width: 600px;
-    grid-area: arbol;
-    margin-left: 1.5rem;
-    filter: drop-shadow(0 30px  20px rgb(38, 49, 31));
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    justify-items: end;
+    align-items: end;
+    text-align: center;
+    padding-bottom: 5rem;
 }
 
 .alimentacion-titulo {
-    grid-area: alimentacion-titulo;
-    font-size: 2rem;
+    
+    margin-right: 20rem;
+    font-family: "Nunito Sans", sans serif;
+    color: #0e4538;
     font-weight: 400;
 }
 
-.alimentacion-texto1 {
-    grid-area: alimentacion-texto1;
+.alimentacion-texto1, .alimentacion-texto2 {
+    max-width: 800px;
     margin-right: 2rem;
 }
 
-.alimentacion-texto2 {
-    grid-area: alimentacion-texto2;
-    margin-right: 2rem;
+.boton-dietas {
+    margin-right: 22rem;
+    background-color: #46341C;
+    color: black;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: .3s;
+}
+
+.boton-dietas:hover {
+    background-color: #5C4525;
+    transform: scale(1.1);
 }
 
 .cetogenica {
@@ -376,7 +386,7 @@ h1 {
 }
 
 .paleo {
-    transform: translate(315px, -420px);
+    transform: translate(315px, -415px);
     max-width: 100px;
 }
 
@@ -409,67 +419,32 @@ h1 {
     position: absolute;
 }
 
-.caja-ilustraciones {
-    position: absolute;
-}
 
-.pasto {
-    max-width: 650px;
-    transform: translate(770px, -200px);
-    filter: drop-shadow(30px 30px  20px rgb(38, 49, 31));
-}
 
-.tronco {
-    max-width: 400px;
-    transform: translate(230px, -179px) rotate(-6deg)
-}
-
-.caja-boton-dietas {
-    position: absolute;
-    transform: translate(990px,-95px);
-    
-}
-
-.caja-boton-dietas>button {
-    background-color: #46341C;
-    color: white;
-}
-
-.caja-boton-dietas>button:hover {
-    background-color: #5C4525;
-}
 
 .seccion4 {
+    height: 100vh;
+    background-image: url(../images/comida.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Nunito Sans", sans serif;
     font-size: 1.5rem;
-    padding-top: 3rem;
     padding-inline: 2rem;
-    background-image: linear-gradient(to bottom, #e2e0da, white);
-}
-
-.caja-ilustraciones-comida {
-    position: absolute;
-}
-
-.comida1 {
-    max-width: 400px;
-    transform: translate(0, -240px);
-}
-
-.comida2 {
-    max-width: 400px;
-    transform: translate(715px, -550px);
+    display: flex;
+    flex-direction: column;
 }
 
 .seccion4-titulo {
+    color: #0e4538;
     font-size: 2rem;
     font-weight: 400;
-    padding-top: 5rem;
+    padding-top: 0.5rem;
+    margin-left: 1.5rem;
 }
 
 .seccion4-texto1 {
-    max-width: 1200px;
-    
+    max-width: 850px;
+    margin-left: 1.5rem;
 }
 
 .seccion4-titulo2 {
@@ -487,7 +462,7 @@ h1 {
 .seccion4-titulo3 {
     font-weight: 300;
     padding-top: 2rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     text-align: end;
 
 }
@@ -496,25 +471,43 @@ h1 {
     text-align: end;
     margin-left: 10rem;
     margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.caja-boton-recetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 15rem;
+    margin-bottom: 3.6rem;
 }
 
 .boton-recetas {
-    transform: translate(1000px,-350px);
-    max-width: 250px;
-    color: white;
-}
-
-.boton-recetas>button {
+    font-family: "Nunito Sans", sans serif;
     font-size: 1.5rem;
     background-color: #9e1e26;
+    border: 0;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    transition: .5s;
 }
 
-.boton-recetas>button>span>a {
+.boton-recetas:hover {
+    transform: scale(1.1);
+    background-color: #691319;
+}
+
+.recetas {
+    color: rgb(208, 155, 155);
+}
+
+.recetas:hover {
     color: white;
 }
 
 .seccion5 {
-    margin-top: 15rem;
+    margin-top: 3rem;
     padding-bottom: 5rem;
     background-image: linear-gradient(to top, #e2e0da, white);
 }
@@ -537,10 +530,10 @@ h1 {
     "seccion5-texto4  seccion5-imagen"
     ;
     row-gap: 1rem;
-    
 }
 
 .seccion5-titulo {
+    color: #0e4538;
     grid-area: seccion5-titulo;
     font-size: 2rem;
     font-weight: 400;
@@ -559,6 +552,7 @@ h1 {
 }
 
 .seccion5-titulo2 {
+    font-style: italic;
     grid-area: seccion5-titulo2;
     font-size: 1.7rem;
     font-weight: 200;
@@ -570,6 +564,7 @@ h1 {
 }
 
 .seccion5-titulo3 {
+    font-style: italic;
     grid-area: seccion5-titulo3;
     font-size: 1.7rem;
     font-weight: 200;
@@ -581,6 +576,7 @@ h1 {
 }
 
 .seccion5-titulo4 {
+    font-style: italic;
     grid-area: seccion5-titulo4;
     font-size: 1.7rem;
     font-weight: 200;
@@ -609,8 +605,11 @@ h1 {
 
 .nav-pages {
     display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
     justify-content: space-between;
-    justify-items: baseline;
+    justify-items: center;
     background-color: #93a80d;
 }
 
@@ -621,9 +620,9 @@ h1 {
 }
 
 .main-objetivos {
-    transform: translate(0px, -35px);
     font-family: "Nunito Sans", sans serif;
     margin-inline: 2rem;
+    margin-bottom: 4rem;
 }
 
 .main-objetivos>section>article>p {
@@ -636,7 +635,7 @@ h1 {
 
 .objetivos-h2 {
     font-size: 1.7rem;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 2rem;
 }
 
@@ -648,10 +647,20 @@ h1 {
 .objetivos-texto2 {
     text-align: center;
     padding-bottom: 1rem;
-}
+} 
 
 .objetivos-impacto-texto {
    padding-bottom: 2rem;
+}
+
+.objetivos-h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+
+.link-estudios {
+    font-style: italic;
 }
 
 .link-estudios:hover {
@@ -664,9 +673,9 @@ h1 {
 }
 
 .main-alimentacion {
-    transform: translate(0px, -35px);
     font-family: "Nunito Sans", sans serif;
     margin-inline: 2rem;
+    margin-bottom: 4rem;
     font-size: 1.3rem;
 }
 
@@ -675,27 +684,99 @@ h1 {
 }
 
 .main-recetas {
-    transform: translate(0px, -35px);
     font-family: "Nunito Sans", sans serif;
     margin-inline: 2rem;
+    margin-bottom: 4rem;
     font-size: 1.3rem;
 }
 
 .titulo1-recetas {
     font-family: Philosopher;
-
 }
 
 .recetas-h2 {
-    font-weight: 300;
-}
-
-.main-recetas>section>article>p {
-    padding-block: 0.5rem;
+    font-weight: 400;
 }
 
 .recetas-h3 {
+    font-style: italic;
     font-weight: 300;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.texto2-recetas {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.caja-beneficios {
+    padding: 2rem 3rem 2rem 3rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1 fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+    grid-template-areas: 
+    "titulo-nutricion titulo-sostenibilidad"
+    "texto-nutricion  texto-sostenibilidad"
+    "titulo-adaptacion titulo-descubrimiento"
+    "texto-adaptacion  texto-descubrimiento"
+    ;
+    gap: 1rem;
+    column-gap: 3rem;
+}
+
+.titulo-nutricion {
+    grid-area: titulo-nutricion;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.texto-nutricion {
+    grid-area: texto-nutricion;
+    background-color: #e4dcbf;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.titulo-sostenibilidad {
+    grid-area: titulo-sostenibilidad;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.texto-sostenibilidad {
+    grid-area: texto-sostenibilidad;
+    background-color: #e4dcbf;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.titulo-adaptacion {
+    grid-area: titulo-adaptacion;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.texto-adaptacion {
+    grid-area: texto-adaptacion;
+    background-color: #e4dcbf;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.titulo-descubrimiento {
+    grid-area: titulo-descubrimiento;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.texto-descubrimiento {
+    grid-area: texto-descubrimiento;
+    background-color: #e4dcbf;
+    border-radius: 8px;
+    padding: 1rem;
 }
 
 .facebook {
@@ -706,117 +787,91 @@ h1 {
     font-weight: 400;
 }
 
-.caja-recetas {
-    display: grid;
-    padding-top: 2rem;
-    margin-left: 12rem;
+.nav-pages-recetas {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: #93a80d;
+    text-decoration: none;
+    max-height: 80px;
+}
+
+.menu-item-receta {
+    text-decoration: none;
+    color: black;
+}
+
+.flex-container-recetas {
     font-family: "Nunito Sans", sans serif;
-    font-size: 1.3rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 0.1fr 1fr 0.1fr 0.1fr 1fr;
-    grid-template-areas: 
-    "pan-keto-titulo       imagen-pan-keto"
-    "ingredientes-pan-keto imagen-pan-keto"
-    "lista-pan-keto        imagen-pan-keto"
-    "imagen-crema          crema-titulo"
-    "imagen-crema          ingredientes-crema"
-    "imagen-crema          lista-crema"
-    "tofu-titulo           imagen-tofu"
-    "ingredientes-tofu     imagen-tofu"
-    "tofu-lista            imagen-tofu"
-    ;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-width: 0;
+    background-color: #e6dfca;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 8px;
 }
 
-.pan-keto-titulo {
-    grid-area: pan-keto-titulo;
-    font-size: 1.5rem;
-    font-weight: 300;
+.flex-container-recetas>div>img {
+    max-width: 500px;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+  
+.receta-panketo {
+    list-style-type: decimal;
 }
 
-.imagen-pan-keto {
-    grid-area: imagen-pan-keto;
+.formulario-email {
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
 }
 
-.ingredientes-pan-keto {
-    grid-area: ingredientes-pan-keto;
-    font-size: 1.3rem;
-    font-weight: 300;
+.formulario-enviar {
+    border: 0;
+    font-family: "Nunito Sans", sans serif;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #cfcbbf;
+    cursor: pointer;
 }
 
-.lista-pan-keto {
-    grid-area: lista-pan-keto;
+.titulo-principal-contacto {
+    font-weight: 600;
 }
 
-.crema-titulo {
-    grid-area: crema-titulo;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-.imagen-crema {
-    grid-area: imagen-crema;
-}
-
-.ingredientes-crema {
-    grid-area: ingredientes-crema;
-    font-size: 1.3rem;
-    font-weight: 300;
-}
-
-.lista-crema {
-    grid-area: lista-crema;
-}
-
-.tofu-titulo {
-    grid-area: tofu-titulo; 
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-.imagen-tofu {
-    grid-area: imagen-tofu;
-}
-
-.ingredientes-tofu {
-    grid-area: ingredientes-tofu;
-    font-size: 1.3rem;
-    font-weight: 300;
-}
-
-.tofu-lista {
-    grid-area: tofu-lista;
-}
-
-.imagen-pan-keto, .imagen-crema, .imagen-tofu {
-    max-width: 350px;
-}
-
-.main-contacto {
-    transform: translate(0px, -35px);
-}
-
-.contactoFormu {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-.intro-section {
+.caja-principal-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     text-align: center;
-    background-color: #45864b;
-    color: #fff;
-    padding: 70px 0;
 }
 
-.intro-section img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    margin-top: 0;
+.texto-contacto {
+    margin-inline: 2rem;
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
 }
 
-.intro-section h1 {
-    font-size: 2rem;
+.imagen-contacto {
+    max-width: 700px;
+    
+}
+
+.form-section {
+    font-family: "Nunito Sans", sans serif;
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .content-container {
@@ -827,68 +882,29 @@ h1 {
     padding: 40px;
 }
 
-.text-section {
-    font-family: "Nunito Sans", sans serif;
-    flex: 1;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-
-.text-section p {
-    font-family: "Nunito Sans", sans serif;
-    margin-bottom: 20px;
-}
-
-.text-section img {
-    max-width: 100%;
-    height: auto;
-}
-
-.form-section {
-    font-family: "Nunito Sans", sans serif;
-    flex: 1;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-
-form {
+.formulario-contacto {
     display: flex;
     flex-direction: column;
 }
 
-label {
+.label-contacto {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.input-nombre-contacto, .input-email-contacto, .textarea-contacto {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-button {
+ 
+.boton-pagina-contacto {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1rem;
     background-color: #463f13;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
 }

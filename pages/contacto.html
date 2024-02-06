@@ -25,40 +25,48 @@
                 <li class="menu-item"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    <main class="main-contacto">     
-                <h1>Contacto</h1>
+    </header> 
+    <main> 
+        <div class="caja-principal-contacto">
+            <h1 class="titulo-principal-contacto">Contacto</h1>
+            <p class="texto-contacto">
+                ¡Saludos desde Balanced Bites! ¿Tenes algo en mente que quieras compartir con nosotros? ¿O tal vez queres unirte en el camino a una vida más saludable? Sea cual sea tu razón, estamos con los brazos abiertos y listos para asesorarte con las dudas que tengas. ¡Sé parte de nuestra comunidad y hagamos grandes cambios juntos!
+            </p>
+            <div class="imagen-contacto-caja">
+                <img class="imagen-contacto" src="../images/girlsitting.jpg" alt="mujerrespondiendoconsultas">
+            </div>
+        </div>
                 <div class="content-container">
-                  <section class="text-section">
-                      <h2>Contactanos</h2>
-                      <p>No dudes en contactarnos en caso que tengas dudas o necesites mayor asesoramiento</p>
-                      <img src="../images/girlsitting.jpg" alt="mujerrespondiendoconsultas">
-                  </section>
                   <section class="form-section">
-                      <h2>Contacto</h2>
-                      <form action="procesar_formulario.php" method="POST" enctype="text/plain">
-                          <label for="nombre">Nombre:</label>
-                          <input type="text" id="nombre" name="nombre" required>
-                          <label for="email">Email:</label>
-                          <input type="email" id="email" name="email" required>
-                          <label for="asunto">Asunto:</label>
+                      <form class="formulario-contacto" action="procesar_formulario.php" method="POST" enctype="text/plain">
+                          <label class="label-contacto" for="nombre">Nombre:</label>
+                          <input class="input-nombre-contacto" type="text" id="nombre" name="nombre" required>
+                          <label class="label-contacto" for="email">Email:</label>
+                          <input class="input-email-contacto" type="email" id="email" name="email" required>
+                          <label class="label-contacto" for="asunto">Asunto:</label>
                           <textarea id="asunto" name="asunto" required></textarea>
-                          <label for="mensaje">Mensaje:</label>
-                          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                          <button type="submit">Enviar</button>
+                          <label class="label-contacto" for="mensaje">Mensaje:</label>
+                          <textarea class="textarea-contacto" id="mensaje" name="mensaje" rows="4" required></textarea>
+                          <button class="boton-pagina-contacto" type="submit">Enviar</button>
                       </form>
                   </section>
               </div>
     </main>
+    <!-- Inicio Footer -->
     <footer class="footer-section">
         <form action="procesar_formulario.php" method="post" enctype="text/plain">
             <label for="suscribite a nuestro newsletter">Suscribte a nuestro newsletter</label>
-            <input type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
-            <input type="submit" value="Enviar" >
+            <input class="formulario-email" type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
+            <input class="formulario-enviar" type="submit" value="Enviar" >
                 </form>
-            <p>Contacto: info@balancedbites.com</p>
-            <p>Seguinos en Facebook e Instagram</p>
+            <p> <ion-icon name="mail-unread-outline"></ion-icon> Contacto: info@balancedbites.com </p>
+            <p>Seguinos en <ion-icon name="logo-facebook"></ion-icon> <ion-icon name="logo-instagram"></ion-icon></p>
             <p><strong>© 2023 Balanced Bites. Todos los derechos reservados.</strong> </p>       
 </footer>
+<!-- Fin Footer -->
+<!-- Iconos -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- Iconos -->
 </body>
 </html>

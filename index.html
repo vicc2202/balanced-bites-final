@@ -30,8 +30,8 @@
                 <img src="./images/señora.png" alt="señora">
             </div>
         </div>
-        <div class="boton">
-            <button>
+        <div class="caja-boton">
+            <button class="boton-visita">
                 <span> <a class="visita" href="#sitio">Visita nuestro sitio <ion-icon
                             name="arrow-down-outline"></ion-icon> </a>
                 </span>
@@ -86,9 +86,9 @@
                 </p>
                 <img class="seccion1-imagen" src="./images/personas.png" alt="ilustración-de-personas">
             </article>
-            <div class="boton-listo">
+            <div class="caja-boton-listo">
                 <button class="boton-listo">
-                    <span><a href="#objetivos">¿Estás listo?</a> </span>
+                    <span><a class="listo" href="#objetivos">¿Estás listo?</a> </span>
                 </button>
             </div>
         </section>
@@ -109,7 +109,7 @@
                     </p>
                     <p>
                         Si no estamos en sintonía con las necesidades de nuestro
-                        cuerpo, se pueden desencadenar desequilibrios que afectan
+                        cuerpo, podemos surfir desequilibrios que afectan
                         negativamente nuestra salud y bienestar.
                     </p>
     
@@ -140,13 +140,13 @@
                 <img class="imagen-rendimiento" src="./images/rendimiento.png" alt="">
                 <div class="texto-rendimiento">
                     <p>
-                        Cuando comprendamos el papel que desempeñan las hormonas en nuestro rendimiento, podremos
+                        Cuando comprendamos el papel que desempeñan las hormonas, podremos
                         experimentar una vida en la que contemos con la claridad mental y energía necesaria para enfrentar
                         cualquier desafío, liberando nuestro mayor potencial.
                     </p>
                     <p>
-                        En Balanced Bites te proporcionaremos información basada en la evidencia y estrategias prácticas
-                        para que puedas aprovechar al máximo tu energía y llevar tu rendimiento al
+                        Te proporcionaremos información basada en evidencia y estrategias prácticas
+                        para que aproveches al máximo tu energía y llevar tu rendimiento al
                         siguiente nivel.
                     </p>
                 </div>
@@ -161,7 +161,7 @@
         <section class="seccion3-caja">
             <article class="seccion3">
                 <h2 class="alimentacion-titulo">Alimentación</h2>
-                <img class="arbol" src="./images/arbol.png" alt="ilustracion">
+                
                 <p class="alimentacion-texto1">
                     Entendemos que cada persona es única, con necesidades y preferencias dietéticas individuales. Ya sea que
                     enfrentes desafíos específicos, como la diabetes, la intolerancia al gluten o simplemente sigas un
@@ -173,33 +173,30 @@
                     restricciones alimenticias. Aprenderás a elegir alimentos específicos, crear planes de comidas
                     personalizados y hacer ajustes que te permitan mejorar tu salud hormonal, sin importar tu situación.
                 </p>
+                <div class="caja-boton-dietas">
+                    <button class="boton-dietas"> <span>
+                            <a class="dietas" href="./pages/alimentacion.html">¡Quiero saber más!</a>
+                        </span></button>
+                </div>
             </article>
             <div class="caja-dietas">
                 <div class="cetogenica">
-                    <button class="cetogenica-texto">cetogénica</button>
+                    <button class="cetogenica-texto"> <a href="http://127.0.0.1:5500/pages/alimentacion.html#cetogenica">cetogenica</a></button>
                 </div>
                 <div class="vegetariana">
-                    <button class="vegetariana-texto">vegetariana</button>
+                    <button class="vegetariana-texto"> <a href="http://127.0.0.1:5500/pages/alimentacion.html#vegetariana">vegetariana</a></button>
                 </div>
                 <div class="paleo">
-                    <button class="paleo-texto">paleo</button>
+                    <button class="paleo-texto"><a href="http://127.0.0.1:5500/pages/alimentacion.html#paleo">paleo</a></button>
                 </div>
                 <div class="vegana">
-                    <button class="vegana-texto">vegana</button>
+                    <button class="vegana-texto"><a href="http://127.0.0.1:5500/pages/alimentacion.html#vegana">vegana</a></button>
                 </div>
                 <div class="tiroides">
-                    <button class="tiroides-texto">tiroides</button>
+                    <button class="tiroides-texto"><a href="http://127.0.0.1:5500/pages/alimentacion.html#tiroides">tiroides</a></button>
                 </div>
             </div>
-            <div class="caja-ilustraciones">
-                <img class="pasto" src="./images/./pasto.png" alt="ilustracion">
-                <img class="tronco" src="./images/tronco.png" alt="ilustracion">
-            </div>
-            <div class="caja-boton-dietas">
-                <button> <span>
-                        <a href="./pages/alimentacion.html">¡Quiero saber más!</a>
-                    </span></button>
-            </div>
+            
         </section>
         <section>
             <article class="seccion4">
@@ -222,18 +219,13 @@
                     especial para ti. Navega por nuestras recetas y encontrarás opciones que se ajustan a tus necesidades y
                     preferencias dietéticas, sin comprometer el sabor ni los beneficios para la salud.
                 </p>
-            </article>
-            <div class="caja-ilustraciones-comida">
-                <img class="comida1" src="./images/comida 1.png" alt="ilustracion">
-                <img class="comida2" src="./images/comida2.png" alt="ilustracion">
-                <div class="boton-recetas">
-                    <button>
-                        <span>
-                            <a href="./pages/recetas.html">Guía de cocina <ion-icon name="restaurant-outline"></ion-icon></a></span>
-                    </button>
+                <div class="caja-boton-recetas">
+                        <button class="boton-recetas">
+                            <span>
+                                <a class="recetas" href="./pages/recetas.html">Guía de cocina <ion-icon name="restaurant-outline"></ion-icon></a></span>
+                        </button>
                 </div>
-            </div>
-            
+            </article>
         </section>
         <section class="seccion5">
             <article class="seccion5-grilla">
@@ -264,17 +256,16 @@
             </article>
         </section>
     </main>
-   
     <!-- Fin Main -->
     <!-- Inicio Footer -->
     <footer class="footer-section">
             <form action="procesar_formulario.php" method="post" enctype="text/plain">
                 <label for="suscribite a nuestro newsletter">Suscribte a nuestro newsletter</label>
-                <input type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
-                <input type="submit" value="Enviar" >
+                <input class="formulario-email" type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
+                <input class="formulario-enviar" type="submit" value="Enviar" >
                     </form>
-                <p>Contacto: info@balancedbites.com</p>
-                <p>Seguinos en Facebook e Instagram</p>
+                <p> <ion-icon name="mail-unread-outline"></ion-icon> Contacto: info@balancedbites.com </p>
+                <p>Seguinos en <ion-icon name="logo-facebook"></ion-icon> <ion-icon name="logo-instagram"></ion-icon></p>
                 <p><strong>© 2023 Balanced Bites. Todos los derechos reservados.</strong> </p>       
     </footer>
     <!-- Fin Footer -->
@@ -283,5 +274,4 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- Iconos -->
 </body>
-
 </html>

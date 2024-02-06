@@ -12,6 +12,7 @@
     <meta name="keywords" content="Nutrientes esenciales, Beneficios nutricionales, Guías alimenticias, Información nutricional, Alimentos saludables, Planes de dieta, Equilibrio nutricional, Consejos alimenticios, Recetas nutritivas, Impacto en la salud">
 </head>
 <body>
+    <!-- Inicio Header -->
     <header class="hero-header">
         <nav class="nav-pages">
             <ul class="menu" id="sitio">
@@ -26,6 +27,8 @@
             </ul>
         </nav>
     </header>
+    <!-- Fin Header -->
+    <!-- Inicio Main -->
     <main class="main-alimentacion">
         <section>
             <h1 class="titulo1-alimentacion">Alimentación</h1>
@@ -44,46 +47,52 @@
             <p class="texto-alimentacion">
                 Así que únete a nosotros mientras profundizamos en los diferentes tipos de alimentación y descubrimos cómo cada uno de ellos puede ser un paso hacia la armonía hormonal y una vida más saludable. ¡Comencemos este viaje juntos hacia un mejor bienestar a través de la alimentación!
             </p>
-            <h2 class="alimentacion-h2">
+            <h2 class="alimentacion-h2" id="cetogenica">
                 Dieta Cetogénica
             </h2>
             <p class="texto-alimentacion">
                 La dieta cetogénica, o dieta keto, es un enfoque nutricional que se caracteriza por ser baja en carbohidratos y alta en grasas saludables. Su objetivo principal es inducir un estado de cetosis en el cuerpo, donde este quema grasa en lugar de carbohidratos como fuente de energía. Esto se logra reduciendo drásticamente la ingesta de carbohidratos (generalmente a menos de 50 gramos al día) y aumentando la ingesta de grasas y proteínas. La cetosis es un estado metabólico en el que el hígado produce cetonas, que son utilizadas como fuente de energía en lugar de la glucosa. Esta dieta se ha utilizado en el tratamiento de la epilepsia, y también se ha popularizado para la pérdida de peso y la mejora de la salud metabólica.
             </p>
-            <h2  class="alimentacion-h2">
+            <h2  class="alimentacion-h2" id="paleo">
                 Dieta Paleo
             </h2>
-            <p class="texto-alimentacion">
+            <p class="texto-alimentacion" >
                 La dieta paleo, también conocida como la dieta del hombre de las cavernas, se basa en consumir alimentos que nuestros ancestros paleolíticos habrían consumido hace miles de años. Esto significa evitar alimentos procesados y centrarse en alimentos naturales como carne magra, pescado, huevos, frutas, verduras, frutos secos y semillas. La idea principal es que esta dieta imita la dieta de nuestros antepasados preagricultura y, por lo tanto, es más adecuada para nuestro cuerpo. Se enfoca en alimentos no procesados y evita los granos, los lácteos y los azúcares refinados.
             </p>
-            <h2 class="alimentacion-h2">
+            <h2 class="alimentacion-h2" id="vegetariana">
                 Dieta Vegetariana
             </h2>
             <p class="texto-alimentacion">
                 La dieta vegetariana excluye la carne, pero permite otros alimentos de origen animal como huevos y productos lácteos. Hay diferentes niveles de vegetarianismo, desde el ovo-lacto-vegetarianismo (que incluye huevos y lácteos) hasta el vegetarianismo estricto (que excluye todos los productos animales). Las personas optan por el vegetarianismo por razones éticas, medioambientales o de salud. Es importante planificar cuidadosamente una dieta vegetariana para asegurarse de obtener todos los nutrientes necesarios, especialmente proteínas, hierro y vitamina B12, que a menudo se encuentran en alimentos de origen animal.
             </p>
-            <h2 class="alimentacion-h2">
+            <h2 class="alimentacion-h2" id="vegana">
                 Dieta Vegana
             </h2>
             <p class="texto-alimentacion">
                 La dieta vegana es la más restrictiva de todas, ya que excluye todos los alimentos y productos de origen animal, incluyendo carne, pescado, huevos, lácteos y miel. Los veganos se basan en alimentos de origen vegetal como frutas, verduras, granos enteros, legumbres, nueces y semillas. Al igual que con el vegetarianismo, es importante planificar una dieta vegana adecuadamente para asegurar la ingesta de todos los nutrientes esenciales. Los suplementos de vitamina B12 son particularmente importantes en una dieta vegana.
             </p>
-            <h2 class="alimentacion-h2">Dietas para problemas en la tiroides</h2>
+            <h2 class="alimentacion-h2" id="tiroides">Dietas para problemas en la tiroides</h2>
             <p class="texto-alimentacion">
                 Las dietas para problemas de tiroides generalmente se diseñan para ayudar a equilibrar la función tiroidea. Las dos condiciones más comunes relacionadas con la tiroides son el hipotiroidismo (tiroides poco activa) y el hipertiroidismo (tiroides hiperactiva). Para el hipotiroidismo, es importante consumir suficiente yodo y selenio, que son nutrientes esenciales para la función tiroidea. Alimentos como algas marinas, pescado y productos lácteos pueden ser beneficiosos. En el caso del hipertiroidismo, se pueden recomendar dietas bajas en yodo para reducir la producción de hormonas tiroideas. Esto implica evitar el yodo en la dieta, lo que significa limitar alimentos como el pescado de agua salada y los alimentos procesados con alto contenido de yodo. Es importante destacar que cualquier dieta específica para problemas de tiroides debe ser supervisada por un profesional de la salud. Recuerda que siempre es recomendable consultar con un médico o dietista antes de realizar cambios significativos en tu dieta, especialmente si tienes condiciones médicas o necesidades dietéticas específicas.
             </p>
-
         </section>
     </main>
+    <!-- Fin Main -->
+    <!-- Inicio Footer -->
     <footer class="footer-section">
         <form action="procesar_formulario.php" method="post" enctype="text/plain">
             <label for="suscribite a nuestro newsletter">Suscribte a nuestro newsletter</label>
-            <input type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
-            <input type="submit" value="Enviar" >
+            <input class="formulario-email" type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
+            <input class="formulario-enviar" type="submit" value="Enviar" >
                 </form>
-            <p>Contacto: info@balancedbites.com</p>
-            <p>Seguinos en Facebook e Instragam</p>
+            <p> <ion-icon name="mail-unread-outline"></ion-icon> Contacto: info@balancedbites.com </p>
+            <p>Seguinos en <ion-icon name="logo-facebook"></ion-icon> <ion-icon name="logo-instagram"></ion-icon></p>
             <p><strong>© 2023 Balanced Bites. Todos los derechos reservados.</strong> </p>       
 </footer>
+<!-- Fin Footer -->
+<!-- Iconos -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- Iconos -->
 </body>
 </html>
