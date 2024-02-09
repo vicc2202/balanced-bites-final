@@ -19,11 +19,12 @@
             <ul class="menu" id="sitio">
                 <li class="menu-item-logo"><a class="menu-item-receta" href="../index.html">Balanced Bites</a></li>
             </ul>
-            <ul class="menu menu-sitio">
+            <button class="open-menu" id="open-menu"><ion-icon name="reorder-three-outline"></ion-icon></button>
+            <ul class="menu menu-sitio" id="menu-sitio">
+              <button class="close-menu" id="close-menu"><ion-icon name="chevron-forward-outline"></ion-icon></button>
                 <li class="menu-item"><a class="menu-item-receta" href="./nuestros-objetivos.html">Nuestros Objetivos</a></li>
                 <li class="menu-item"><a class="menu-item-receta" href="./alimentacion.html">Alimentación</a></li>
                 <li class="menu-item"><a class="menu-item-receta" href="./recetas.html">Recetas</a></li>
-                
                 <li class="menu-item"><a class="menu-item-receta" href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -122,21 +123,21 @@
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
-    <footer class="footer-section">
+    <footer class="footer-section-recetas">
         <form action="procesar_formulario.php" method="post" enctype="text/plain">
             <label for="suscribite a nuestro newsletter">Suscribte a nuestro newsletter</label>
-            <input class="formulario-email" type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
-            <input class="formulario-enviar" type="submit" value="Enviar" >
-                </form>
-            <p> <ion-icon name="mail-unread-outline"></ion-icon> Contacto: info@balancedbites.com </p>
+            <input class="formulario-email-recetas" type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
+            <input class="formulario-enviar-recetas" type="submit" value="Enviar"></form>
+            <p><ion-icon name="mail-unread-outline"></ion-icon> Contacto: info@balancedbites.com</p>
             <p>Seguinos en <ion-icon name="logo-facebook"></ion-icon> <ion-icon name="logo-instagram"></ion-icon></p>
             <p><strong>© 2023 Balanced Bites. Todos los derechos reservados.</strong> </p>       
 </footer>
 <!-- Fin Footer -->
-<!-- Iconos y Bootstrap-->
+<!-- Iconos, Bootstrap y JS-->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<!-- Iconos y Bootstrap -->
+<script src="../js/main.js"></script>
+<!-- Iconos, Bootstrap y JS -->
 </body>
 </html>
