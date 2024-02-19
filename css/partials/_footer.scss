@@ -1,0 +1,45 @@
+.footer-section {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #7a8919;
+    padding: 1rem;
+    max-width: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.footer-section-recetas {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #7a8919;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 0;
+    padding-top: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.formulario-email-recetas {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 0.9rem;
+    border: 0;
+    border-radius: 8px;
+    padding: 0.3rem;
+}
+
+.formulario-enviar-recetas {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 0.8rem;
+    border: 0;
+    border-radius: 8px;
+    padding: 0.3rem;
+}

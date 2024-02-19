@@ -1,0 +1,92 @@
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(to right, #BCD329, #93a80d);
+}
+
+.hero-main {
+    display: flex;
+    padding-top: 3rem;
+
+    > div {
+        flex: 1;
+    }
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0 3rem 5rem;
+    font-family: Philosopher;
+
+    h3 {
+        font-size: 1.9rem;
+        color: rgb(5, 50, 58);
+    }
+}
+
+.nutricion {
+    font-size: 3.5rem;
+    color: rgb(5, 50, 58);
+} 
+
+.balanced {
+    font-size: 6rem;
+    transition: .5s;
+    color: #0e4538;
+    text-shadow: 0 4px 4px  rgb(5, 50, 58);
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3.5rem;
+
+    img {
+        width: 620px;
+        transform: rotate(25deg);
+        transition: .7s;
+        filter: drop-shadow(30px 30px  20px rgb(38, 49, 31));
+
+        &:hover {
+            transform: rotate(-10deg) ;
+        }
+    }
+}
+
+ 
+.caja-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.boton-visita {
+    border: 0;
+    font-size: 1.2rem;
+    background-color: #7a8919;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+.visita {
+    color:#0e4538;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+    }
+}

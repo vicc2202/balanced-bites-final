@@ -1,0 +1,282 @@
+.titulo1-objetivos {
+    font-family: Philosopher;
+    font-weight: 300 ;
+    padding-bottom: 1rem;
+}
+
+.main-objetivos {
+    font-family: "Nunito Sans", sans serif;
+    margin: 0 2rem 4rem 2rem;
+}
+
+.main-objetivos>section>article>p {
+    font-size: 1.3rem;
+}
+
+.objetivos-texto1 {
+    text-align: center;
+}
+
+.objetivos-h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.ojetivos-h2-fundamentos {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.objetivos-texto2 {
+    text-align: center;
+    padding-bottom: 1rem;
+} 
+
+.objetivos-impacto-texto {
+   padding-bottom: 2rem;
+}
+
+.objetivos-h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+
+.link-estudios {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+.link-estudios:hover {
+    color: #0e4538;
+}
+
+.titulo1-alimentacion {
+    font-family: Philosopher;
+    font-weight: 300 ;
+}
+
+.main-alimentacion {
+    font-family: "Nunito Sans", sans serif;
+    margin: 0 2rem 4rem 2rem;
+    font-size: 1.3rem;
+}
+
+.texto-alimentacion {
+    padding-block: 0.8rem;
+}
+
+.main-recetas {
+    font-family: "Nunito Sans", sans serif;
+    margin: 0 2rem 4rem 2rem;
+    font-size: 1.3rem;
+}
+
+.titulo1-recetas {
+    font-family: Philosopher;
+}
+
+.recetas-h2 {
+    font-weight: 400;
+}
+
+.recetas-h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.texto2-recetas {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.caja-beneficios {
+    padding: 2rem 3rem 2rem 3rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1 fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+    grid-template-areas: 
+    "titulo-nutricion titulo-sostenibilidad"
+    "texto-nutricion  texto-sostenibilidad"
+    "titulo-adaptacion titulo-descubrimiento"
+    "texto-adaptacion  texto-descubrimiento"
+    ;
+    gap: 1rem;
+    column-gap: 3rem;
+}
+
+.titulo-nutricion {
+    grid-area: titulo-nutricion;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.texto-nutricion {
+    grid-area: texto-nutricion;
+    background-color: #e4dcbf;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.titulo-sostenibilidad {
+    grid-area: titulo-sostenibilidad;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.texto-sostenibilidad {
+    grid-area: texto-sostenibilidad;
+    background-color: #e4dcbf;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.titulo-adaptacion {
+    grid-area: titulo-adaptacion;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.texto-adaptacion {
+    grid-area: texto-adaptacion;
+    background-color: #e4dcbf;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.titulo-descubrimiento {
+    grid-area: titulo-descubrimiento;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.texto-descubrimiento {
+    grid-area: texto-descubrimiento;
+    background-color: #e4dcbf;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.facebook {
+    color: white;
+}
+
+.alimentacion-h2 {
+    font-weight: 400;
+}
+
+.flex-container-recetas {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.2rem;
+    background-color: #e6dfca;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-width: 0;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.flex-container-recetas>div>img {
+    max-width: 500px;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+  
+.receta-panketo {
+    list-style-type: decimal;
+}
+
+.formulario-email {
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.formulario-enviar {
+    font-family: "Nunito Sans", sans serif;
+    background-color: #cfcbbf;
+    border: 0;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.titulo-principal-contacto {
+    font-weight: 600;
+}
+
+.caja-principal-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-contacto {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+    margin-inline: 2rem;
+}
+
+.imagen-contacto {
+    max-width: 700px;
+}
+
+.form-section {
+    font-family: "Nunito Sans", sans serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-contacto {
+    margin-bottom: 5px;
+}
+
+.input-nombre-contacto, .input-email-contacto, .textarea-contacto {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ 
+.boton-pagina-contacto {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #463f13;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-pagina-contacto:hover {
+    color: black;
+    background-color: #C09A83;
+}

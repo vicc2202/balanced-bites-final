@@ -1,0 +1,451 @@
+h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 5.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion1 {
+    padding-inline: 6rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr ;
+    grid-template-areas: 
+    "seccion1-parrafo1 seccion1-imagen seccion1-parrafo3"
+    "seccion1-parrafo2 seccion1-imagen seccion1-parrafo4"
+    ;
+    gap: 1rem;
+}
+
+.seccion1-parrafo1 {
+    grid-area: seccion1-parrafo1;
+}
+
+.seccion1-parrafo3 {
+    grid-area: seccion1-parrafo3;
+}
+
+.seccion1-parrafo2 {
+    grid-area: seccion1-parrafo2;
+}
+
+.seccion1-imagen {
+    grid-area: seccion1-imagen;
+    max-width: 450px;
+    padding-top: 2rem;
+}
+
+.seccion1-parrafo4 {
+    grid-area: seccion1-parrafo4;
+}
+
+.caja-boton-listo {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-listo {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.2rem;
+    background-color: #f8f8f8;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.listo {
+    transition: .5s;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        font-size: 1.4rem;
+        color: white;
+        background-color: #0e4538;
+        border-radius: 8px;
+        padding: 8px;
+        transform: scale(1.1);
+    }
+}
+
+.seccion2-h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #0e4538;
+    background-color: #f4f1ea;
+    padding-top: 1.1rem;
+}
+
+.seccion2-h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.seccion2 {
+    background-image: linear-gradient(to bottom, #f4f1ea, white);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 0.2fr 2fr 0.2fr 2fr;
+    grid-template-rows: 0.1fr 1fr 0.8fr;
+    grid-template-areas: 
+    "hormonas        flecha1 nutrientes        flecha2 rendimiento"
+    "imagen-hormonas flecha1 imagen-nutrientes flecha2 imagen-rendimiento"
+    "texto-hormonas  flecha1 texto-nutrientes  flecha2 texto-rendimiento"
+    ;
+}
+
+.hormonas {
+    grid-area: hormonas;
+}
+
+.imagen-hormonas {
+    grid-area: imagen-hormonas;
+    max-width: 300px;
+    margin-inline: 4rem;
+}
+
+.texto-hormonas {
+    grid-area: texto-hormonas;
+    background-color: #EDE9E1;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.flecha1 {
+    grid-area: flecha1;
+    font-size: 2.5rem;
+    padding-top: 8rem;
+}
+
+.nutrientes {
+    grid-area: nutrientes;
+}
+
+.imagen-nutrientes {
+    grid-area: imagen-nutrientes;
+    max-width: 300px;
+    margin-inline: 4rem;
+}
+
+.texto-nutrientes {
+    grid-area: texto-nutrientes;
+    background-color: #EDE9E1;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.flecha2 {
+    grid-area: flecha2;
+    font-size: 2.5rem;
+    padding-top: 8rem;
+}
+
+.rendimiento {
+    grid-area: rendimiento;
+}
+
+.imagen-rendimiento {
+    grid-area: imagen-rendimiento;
+    max-width: 300px;
+    margin-inline: 4rem;
+}
+
+.texto-rendimiento {
+    grid-area: texto-rendimiento;
+    background-color: #EDE9E1;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.cierre-nuestros-objetivos {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.seccion3 {
+    background-image: url(../images/seccion3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+    align-items: end;
+    margin-top: 3.4rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+}
+
+.alimentacion-titulo {
+    font-family: "Nunito Sans", sans serif;
+    font-weight: 400;
+    color: #0e4538;
+    margin-right: 20rem;
+}
+
+.alimentacion-texto1, .alimentacion-texto2 {
+    max-width: 800px;
+    margin-right: 2rem;
+}
+
+.boton-dietas {
+    font-size: 1rem;
+    color: black;
+    background-color: #46341C;
+    margin-top: 2rem;
+    margin-right: 25rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 8px;
+    transition: .3s;
+    
+
+    &:hover {
+        background-color: #5C4525;
+        transform: scale(1.1);
+    }
+}
+
+.dietas {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: white;
+    }
+}
+
+
+.cetogenica {
+    transform: translate(115px,-355px) rotate(10deg); 
+    max-width: 100px;
+}
+
+.cetogenica-texto {
+    background-color: transparent;
+    color: white;
+}
+
+.vegetariana {
+    transform: translate(430px,-380px) rotate(-11deg);
+    max-width: 100px;
+}
+
+.vegetariana-texto {
+    background-color: transparent;
+    color: white;
+}
+
+.paleo {
+    transform: translate(315px, -415px);
+    max-width: 100px;
+}
+
+.paleo-texto {
+    background-color:transparent;
+    color: white;
+}
+
+.vegana {
+    transform: translate(230px, -390px) rotate(-8deg);
+    max-width: 100px;
+}
+
+.vegana-texto {
+    background-color: transparent;
+    color: white;
+}
+
+.tiroides {
+    transform: translate(315px, -365px) rotate(-9deg);
+    max-width: 100px;
+}
+
+.tiroides-texto {
+    background-color: transparent;
+    color: white;
+}
+
+.caja-dietas {
+    position: absolute;
+}
+
+.seccion4 {
+    height: 100vh;
+    background-image: url(../images/comida.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion4-titulo {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #0e4538;
+    padding-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.seccion4-texto1 {
+    max-width: 850px;
+    margin-left: 1.5rem;
+}
+
+.seccion4-titulo2 {
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.seccion4-texto2 {
+    text-align: center;
+    max-width: 1200px;
+    margin-inline: 4.5rem;
+}
+
+.seccion4-titulo3 {
+    font-weight: 300;
+    text-align: end;
+    padding-top: 2rem;
+    margin-right: 1rem;
+}
+
+.seccion4-texto3 {
+    text-align: end;
+    margin: 0 1rem 2rem 10rem;
+}
+
+.caja-boton-recetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0 15rem 3.6rem 0;
+}
+
+.boton-recetas {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+    background-color: #9e1e26;
+    border: 0;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.boton-recetas:hover {
+    transform: scale(1.1);
+    background-color: #691319;
+}
+
+.recetas {
+    text-decoration: none;
+    color: rgb(208, 155, 155);
+}
+
+.recetas:hover {
+    color: white;
+}
+
+.seccion5 {
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    background-image: linear-gradient(to top, #e2e0da, white);
+}
+
+.seccion5-grilla {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+    padding-inline: 1.5rem;
+    display: grid;
+    grid-template-columns: 2 fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: 
+    "seccion5-titulo seccion5-titulo"
+    "seccion5-texto1 seccion5-texto1"
+    "seccion5-titulo2 seccion5-imagen"
+    "seccion5-texto2 seccion5-imagen"
+    "seccion5-titulo3 seccion5-imagen"
+    "seccion5-texto3  seccion5-imagen"
+    "seccion5-titulo4 seccion5-imagen"
+    "seccion5-texto4  seccion5-imagen"
+    ;
+    row-gap: 1rem;
+}
+
+.seccion5-titulo {
+    grid-area: seccion5-titulo;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #0e4538;
+}
+
+.seccion5-imagen {
+    grid-area: seccion5-imagen;
+    max-width: 600px;
+    filter: drop-shadow(10px 10px  10px rgb(38, 49, 31));
+}
+
+.seccion5-texto1 {
+    grid-area: seccion5-texto1;
+    text-align: center;
+}
+
+.seccion5-titulo2 {
+    grid-area: seccion5-titulo2;
+    font-style: italic;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.seccion5-texto2 {
+    grid-area: seccion5-texto2;
+    font-size: 1.3rem;
+}
+
+.seccion5-titulo3 {
+    grid-area: seccion5-titulo3;
+    font-style: italic;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.seccion5-texto3 {
+    grid-area: seccion5-texto3;
+    font-size: 1.3rem;
+}
+
+.seccion5-titulo4 {
+    grid-area: seccion5-titulo4;
+    font-style: italic;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.seccion5-texto4 {
+    grid-area: seccion5-texto4;
+    font-size: 1.3rem;
+}

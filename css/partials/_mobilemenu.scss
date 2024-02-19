@@ -1,0 +1,17 @@
+.open-menu {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+.close-menu, .open-menu {
+    display: none;
+}
+
+.close-menu:hover {
+    color: white;
+}
+
+.open-menu:hover {
+    color: white;
+}

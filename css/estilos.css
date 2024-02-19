@@ -1,0 +1,1624 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-BoldItalic.ttf);
+}
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(to right, #BCD329, #93a80d);
+}
+
+.hero-main {
+  display: flex;
+  padding-top: 3rem;
+}
+.hero-main > div {
+  flex: 1;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0 3rem 5rem;
+  font-family: Philosopher;
+}
+.hero-text h3 {
+  font-size: 1.9rem;
+  color: rgb(5, 50, 58);
+}
+
+.nutricion {
+  font-size: 3.5rem;
+  color: rgb(5, 50, 58);
+}
+
+.balanced {
+  font-size: 6rem;
+  transition: 0.5s;
+  color: #0e4538;
+  text-shadow: 0 4px 4px rgb(5, 50, 58);
+}
+.balanced:hover {
+  transform: scale(1.1);
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3.5rem;
+}
+.hero-img img {
+  width: 620px;
+  transform: rotate(25deg);
+  transition: 0.7s;
+  filter: drop-shadow(30px 30px 20px rgb(38, 49, 31));
+}
+.hero-img img:hover {
+  transform: rotate(-10deg);
+}
+
+.caja-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.boton-visita {
+  border: 0;
+  font-size: 1.2rem;
+  background-color: #7a8919;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.boton-visita:hover {
+  transform: scale(1.1);
+}
+
+.visita {
+  color: #0e4538;
+  text-decoration: none;
+}
+.visita:hover {
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.6rem;
+  align-items: baseline;
+  background-image: linear-gradient(to right, #BCD329, #93a80d);
+}
+
+.menu-sitio {
+  display: flex;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  gap: 2rem;
+}
+
+.menu-item-logo {
+  font-family: Philosopher;
+  font-size: 2.5rem;
+}
+.menu-item-logo a {
+  color: black;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.menu-item {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+}
+.menu-item a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+.menu-item a:hover {
+  color: rgba(255, 255, 255, 0.745);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 5.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.seccion1 {
+  padding-inline: 6rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "seccion1-parrafo1 seccion1-imagen seccion1-parrafo3" "seccion1-parrafo2 seccion1-imagen seccion1-parrafo4";
+  gap: 1rem;
+}
+
+.seccion1-parrafo1 {
+  grid-area: seccion1-parrafo1;
+}
+
+.seccion1-parrafo3 {
+  grid-area: seccion1-parrafo3;
+}
+
+.seccion1-parrafo2 {
+  grid-area: seccion1-parrafo2;
+}
+
+.seccion1-imagen {
+  grid-area: seccion1-imagen;
+  max-width: 450px;
+  padding-top: 2rem;
+}
+
+.seccion1-parrafo4 {
+  grid-area: seccion1-parrafo4;
+}
+
+.caja-boton-listo {
+  display: flex;
+  justify-content: center;
+}
+
+.boton-listo {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.2rem;
+  background-color: #f8f8f8;
+  border: 0;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.listo {
+  transition: 0.5s;
+  text-decoration: none;
+  color: black;
+}
+.listo:hover {
+  font-size: 1.4rem;
+  color: white;
+  background-color: #0e4538;
+  border-radius: 8px;
+  padding: 8px;
+  transform: scale(1.1);
+}
+
+.seccion2-h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #0e4538;
+  background-color: #f4f1ea;
+  padding-top: 1.1rem;
+}
+
+.seccion2-h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.seccion2 {
+  background-image: linear-gradient(to bottom, #f4f1ea, white);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 0.2fr 2fr 0.2fr 2fr;
+  grid-template-rows: 0.1fr 1fr 0.8fr;
+  grid-template-areas: "hormonas        flecha1 nutrientes        flecha2 rendimiento" "imagen-hormonas flecha1 imagen-nutrientes flecha2 imagen-rendimiento" "texto-hormonas  flecha1 texto-nutrientes  flecha2 texto-rendimiento";
+}
+
+.hormonas {
+  grid-area: hormonas;
+}
+
+.imagen-hormonas {
+  grid-area: imagen-hormonas;
+  max-width: 300px;
+  margin-inline: 4rem;
+}
+
+.texto-hormonas {
+  grid-area: texto-hormonas;
+  background-color: #EDE9E1;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.flecha1 {
+  grid-area: flecha1;
+  font-size: 2.5rem;
+  padding-top: 8rem;
+}
+
+.nutrientes {
+  grid-area: nutrientes;
+}
+
+.imagen-nutrientes {
+  grid-area: imagen-nutrientes;
+  max-width: 300px;
+  margin-inline: 4rem;
+}
+
+.texto-nutrientes {
+  grid-area: texto-nutrientes;
+  background-color: #EDE9E1;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.flecha2 {
+  grid-area: flecha2;
+  font-size: 2.5rem;
+  padding-top: 8rem;
+}
+
+.rendimiento {
+  grid-area: rendimiento;
+}
+
+.imagen-rendimiento {
+  grid-area: imagen-rendimiento;
+  max-width: 300px;
+  margin-inline: 4rem;
+}
+
+.texto-rendimiento {
+  grid-area: texto-rendimiento;
+  background-color: #EDE9E1;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.cierre-nuestros-objetivos {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.seccion3 {
+  background-image: url(../images/seccion3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+  align-items: end;
+  margin-top: 3.4rem;
+  padding-bottom: 5rem;
+  gap: 2rem;
+}
+
+.alimentacion-titulo {
+  font-family: "Nunito Sans", sans serif;
+  font-weight: 400;
+  color: #0e4538;
+  margin-right: 20rem;
+}
+
+.alimentacion-texto1, .alimentacion-texto2 {
+  max-width: 800px;
+  margin-right: 2rem;
+}
+
+.boton-dietas {
+  font-size: 1rem;
+  color: black;
+  background-color: #46341C;
+  margin-top: 2rem;
+  margin-right: 25rem;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.boton-dietas:hover {
+  background-color: #5C4525;
+  transform: scale(1.1);
+}
+
+.dietas {
+  text-decoration: none;
+  color: black;
+}
+.dietas:hover {
+  color: white;
+}
+
+.cetogenica {
+  transform: translate(115px, -355px) rotate(10deg);
+  max-width: 100px;
+}
+
+.cetogenica-texto {
+  background-color: transparent;
+  color: white;
+}
+
+.vegetariana {
+  transform: translate(430px, -380px) rotate(-11deg);
+  max-width: 100px;
+}
+
+.vegetariana-texto {
+  background-color: transparent;
+  color: white;
+}
+
+.paleo {
+  transform: translate(315px, -415px);
+  max-width: 100px;
+}
+
+.paleo-texto {
+  background-color: transparent;
+  color: white;
+}
+
+.vegana {
+  transform: translate(230px, -390px) rotate(-8deg);
+  max-width: 100px;
+}
+
+.vegana-texto {
+  background-color: transparent;
+  color: white;
+}
+
+.tiroides {
+  transform: translate(315px, -365px) rotate(-9deg);
+  max-width: 100px;
+}
+
+.tiroides-texto {
+  background-color: transparent;
+  color: white;
+}
+
+.caja-dietas {
+  position: absolute;
+}
+
+.seccion4 {
+  height: 100vh;
+  background-image: url(../images/comida.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.5rem;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion4-titulo {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #0e4538;
+  padding-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.seccion4-texto1 {
+  max-width: 850px;
+  margin-left: 1.5rem;
+}
+
+.seccion4-titulo2 {
+  font-weight: 300;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.seccion4-texto2 {
+  text-align: center;
+  max-width: 1200px;
+  margin-inline: 4.5rem;
+}
+
+.seccion4-titulo3 {
+  font-weight: 300;
+  text-align: end;
+  padding-top: 2rem;
+  margin-right: 1rem;
+}
+
+.seccion4-texto3 {
+  text-align: end;
+  margin: 0 1rem 2rem 10rem;
+}
+
+.caja-boton-recetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin: 0 15rem 3.6rem 0;
+}
+
+.boton-recetas {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.5rem;
+  background-color: #9e1e26;
+  border: 0;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.boton-recetas:hover {
+  transform: scale(1.1);
+  background-color: #691319;
+}
+
+.recetas {
+  text-decoration: none;
+  color: rgb(208, 155, 155);
+}
+
+.recetas:hover {
+  color: white;
+}
+
+.seccion5 {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  background-image: linear-gradient(to top, #e2e0da, white);
+}
+
+.seccion5-grilla {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.5rem;
+  padding-inline: 1.5rem;
+  display: grid;
+  grid-template-columns: 2 fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas: "seccion5-titulo seccion5-titulo" "seccion5-texto1 seccion5-texto1" "seccion5-titulo2 seccion5-imagen" "seccion5-texto2 seccion5-imagen" "seccion5-titulo3 seccion5-imagen" "seccion5-texto3  seccion5-imagen" "seccion5-titulo4 seccion5-imagen" "seccion5-texto4  seccion5-imagen";
+  row-gap: 1rem;
+}
+
+.seccion5-titulo {
+  grid-area: seccion5-titulo;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #0e4538;
+}
+
+.seccion5-imagen {
+  grid-area: seccion5-imagen;
+  max-width: 600px;
+  filter: drop-shadow(10px 10px 10px rgb(38, 49, 31));
+}
+
+.seccion5-texto1 {
+  grid-area: seccion5-texto1;
+  text-align: center;
+}
+
+.seccion5-titulo2 {
+  grid-area: seccion5-titulo2;
+  font-style: italic;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.seccion5-texto2 {
+  grid-area: seccion5-texto2;
+  font-size: 1.3rem;
+}
+
+.seccion5-titulo3 {
+  grid-area: seccion5-titulo3;
+  font-style: italic;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.seccion5-texto3 {
+  grid-area: seccion5-texto3;
+  font-size: 1.3rem;
+}
+
+.seccion5-titulo4 {
+  grid-area: seccion5-titulo4;
+  font-style: italic;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.seccion5-texto4 {
+  grid-area: seccion5-texto4;
+  font-size: 1.3rem;
+}
+
+.nav-pages {
+  background-color: #93a80d;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  justify-items: center;
+  z-index: 2;
+}
+
+.nav-pages-recetas {
+  background-color: #93a80d;
+  text-decoration: none;
+  width: 100%;
+  max-height: 80px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  justify-items: center;
+  z-index: 2;
+}
+
+.menu-item-receta {
+  text-decoration: none;
+  color: black;
+}
+
+.titulo1-objetivos {
+  font-family: Philosopher;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.main-objetivos {
+  font-family: "Nunito Sans", sans serif;
+  margin: 0 2rem 4rem 2rem;
+}
+
+.main-objetivos > section > article > p {
+  font-size: 1.3rem;
+}
+
+.objetivos-texto1 {
+  text-align: center;
+}
+
+.objetivos-h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.ojetivos-h2-fundamentos {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.objetivos-texto2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.objetivos-impacto-texto {
+  padding-bottom: 2rem;
+}
+
+.objetivos-h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
+.link-estudios {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+.link-estudios:hover {
+  color: #0e4538;
+}
+
+.titulo1-alimentacion {
+  font-family: Philosopher;
+  font-weight: 300;
+}
+
+.main-alimentacion {
+  font-family: "Nunito Sans", sans serif;
+  margin: 0 2rem 4rem 2rem;
+  font-size: 1.3rem;
+}
+
+.texto-alimentacion {
+  padding-block: 0.8rem;
+}
+
+.main-recetas {
+  font-family: "Nunito Sans", sans serif;
+  margin: 0 2rem 4rem 2rem;
+  font-size: 1.3rem;
+}
+
+.titulo1-recetas {
+  font-family: Philosopher;
+}
+
+.recetas-h2 {
+  font-weight: 400;
+}
+
+.recetas-h3 {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.texto2-recetas {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.caja-beneficios {
+  padding: 2rem 3rem 2rem 3rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1 fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+  grid-template-areas: "titulo-nutricion titulo-sostenibilidad" "texto-nutricion  texto-sostenibilidad" "titulo-adaptacion titulo-descubrimiento" "texto-adaptacion  texto-descubrimiento";
+  gap: 1rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
+.titulo-nutricion {
+  grid-area: titulo-nutricion;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.texto-nutricion {
+  grid-area: texto-nutricion;
+  background-color: #e4dcbf;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.titulo-sostenibilidad {
+  grid-area: titulo-sostenibilidad;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.texto-sostenibilidad {
+  grid-area: texto-sostenibilidad;
+  background-color: #e4dcbf;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.titulo-adaptacion {
+  grid-area: titulo-adaptacion;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.texto-adaptacion {
+  grid-area: texto-adaptacion;
+  background-color: #e4dcbf;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.titulo-descubrimiento {
+  grid-area: titulo-descubrimiento;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.texto-descubrimiento {
+  grid-area: texto-descubrimiento;
+  background-color: #e4dcbf;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.facebook {
+  color: white;
+}
+
+.alimentacion-h2 {
+  font-weight: 400;
+}
+
+.flex-container-recetas {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.2rem;
+  background-color: #e6dfca;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-width: 0;
+  padding: 1.5rem;
+  margin: 2rem;
+  border-radius: 8px;
+}
+
+.flex-container-recetas > div > img {
+  max-width: 500px;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.receta-panketo {
+  list-style-type: decimal;
+}
+
+.formulario-email {
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.formulario-enviar {
+  font-family: "Nunito Sans", sans serif;
+  background-color: #cfcbbf;
+  border: 0;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.titulo-principal-contacto {
+  font-weight: 600;
+}
+
+.caja-principal-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.texto-contacto {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.5rem;
+  margin-inline: 2rem;
+}
+
+.imagen-contacto {
+  max-width: 700px;
+}
+
+.form-section {
+  font-family: "Nunito Sans", sans serif;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  padding: 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-contacto {
+  margin-bottom: 5px;
+}
+
+.input-nombre-contacto, .input-email-contacto, .textarea-contacto {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.boton-pagina-contacto {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #463f13;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-pagina-contacto:hover {
+  color: black;
+  background-color: #C09A83;
+}
+
+.open-menu {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.close-menu, .open-menu {
+  display: none;
+}
+
+.close-menu:hover {
+  color: white;
+}
+
+.open-menu:hover {
+  color: white;
+}
+
+.footer-section {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #7a8919;
+  padding: 1rem;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.footer-section-recetas {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #7a8919;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  row-gap: 0;
+  padding-top: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.formulario-email-recetas {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 0.9rem;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.3rem;
+}
+
+.formulario-enviar-recetas {
+  font-family: "Nunito Sans", sans serif;
+  font-size: 0.8rem;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.3rem;
+}
+
+/* Media Queries DESKTOP FIRST  */
+@media screen and (max-width: 1200px) {
+  .hero-img img {
+    max-width: 490px;
+  }
+  h1 {
+    padding-top: 5rem;
+  }
+  .seccion1 {
+    font-size: 1.2rem;
+    padding-inline: 2rem;
+  }
+  .seccion2-h2 {
+    font-size: 1.8rem;
+  }
+  .seccion2-h3 {
+    font-size: 1.6rem;
+  }
+  .texto-hormonas, .texto-nutrientes, .texto-rendimiento {
+    font-size: 1.1rem;
+  }
+  .imagen-hormonas, .imagen-nutrientes, .imagen-rendimiento {
+    max-width: 260px;
+    margin-inline: 3rem;
+  }
+  .seccion3 {
+    gap: 3.2rem;
+    padding-bottom: 4.2rem;
+  }
+  .alimentacion-titulo {
+    font-size: 1.8rem;
+  }
+  .alimentacion-texto1, .alimentacion-texto2 {
+    font-size: 1.2rem;
+    max-width: 700px;
+  }
+  .boton-dietas {
+    margin-right: 16rem;
+  }
+  .seccion4 {
+    font-size: 1.3rem;
+  }
+  .seccion4-titulo2, .seccion4-titulo3 {
+    font-size: 1.6rem;
+  }
+  .seccion4-texto1 {
+    max-width: 720px;
+  }
+  .seccion5 {
+    margin-top: 0;
+  }
+  .seccion5-titulo {
+    font-size: 1.8rem;
+  }
+  .seccion5-titulo2, .seccion5-titulo3, .seccion5-titulo4 {
+    font-size: 1.6rem;
+  }
+  .seccion5-texto1, .seccion5-texto2, .seccion5-texto3, .seccion5-texto4 {
+    font-size: 1.2rem;
+  }
+  .titulo1-objetivos {
+    font-size: 2.5rem;
+  }
+  .main-objetivos > section > article > p {
+    font-size: 1.2rem;
+  }
+  .objetivos-h2 {
+    font-size: 1.8rem;
+  }
+  .objetivos-h3 {
+    font-size: 1.6rem;
+  }
+  .titulo1-alimentacion {
+    font-size: 2.5rem;
+  }
+  .main-alimentacion {
+    font-size: 1.2rem;
+  }
+  .alimentacion-h2 {
+    font-size: 1.8rem;
+  }
+  .titulo1-recetas {
+    font-size: 2.5rem;
+  }
+  .recetas-h2 {
+    font-size: 1.8rem;
+  }
+  .recetas-h3 {
+    font-size: 1.6rem;
+  }
+  .main-recetas {
+    font-size: 1.2rem;
+  }
+  .titulo-nutricion, .titulo-sostenibilidad, .titulo-adaptacion, .titulo-descubrimiento {
+    font-size: 1.5rem;
+  }
+  .titulo-principal-contacto {
+    font-size: 2.5rem;
+  }
+  .texto-contacto {
+    font-size: 1.2rem;
+  }
+  .imagen-contacto {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .hero-main {
+    padding-top: 1rem;
+    flex-direction: column;
+  }
+  .hero-text {
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-bottom: 0;
+  }
+  .nutricion {
+    visibility: hidden;
+    position: absolute;
+  }
+  .balanced {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .desbloquea {
+    visibility: hidden;
+    position: absolute;
+  }
+  .hero-img {
+    width: 400px;
+    padding-right: 0;
+    align-self: center;
+  }
+  .caja-boton {
+    padding-top: 3.5rem;
+  }
+  .menu {
+    padding: 0.5rem;
+  }
+  .menu-sitio {
+    position: fixed;
+    background-color: #93a80d;
+    flex-direction: column;
+    right: 0;
+    text-align: right;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    inset: 0;
+    gap: 2rem;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .menu-sitio.active {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu-item {
+    font-family: "Nunito Sans", sans serif;
+    font-size: 1.5rem;
+  }
+  .close-menu {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+  }
+  .open-menu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-right: 2rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .seccion1 {
+    font-size: 1.1rem;
+    gap: 1rem;
+    padding-inline: 3rem;
+  }
+  .seccion1-imagen {
+    max-width: 350px;
+    padding-top: 0;
+    align-self: center;
+  }
+  .boton-listo {
+    font-size: 1rem;
+  }
+  .seccion2-h2 {
+    font-size: 1.5rem;
+  }
+  .seccion2-h3 {
+    font-size: 1.4rem;
+    max-width: 280px;
+  }
+  .seccion2 {
+    font-size: 1.05rem;
+    grid-template-rows: 0.1fr 0.4fr 0.5fr;
+  }
+  .imagen-hormonas {
+    max-width: 200px;
+  }
+  .imagen-nutrientes {
+    max-width: 200px;
+  }
+  .imagen-rendimiento {
+    max-width: 200px;
+  }
+  .flecha1 {
+    font-size: 2rem;
+  }
+  .flecha2 {
+    font-size: 2rem;
+  }
+  .texto-rendimiento {
+    margin-right: 2.5rem;
+  }
+  .cierre-nuestros-objetivos {
+    font-size: 1.1rem;
+    margin-inline: 4rem;
+  }
+  .seccion3 {
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    gap: 1rem;
+    background-image: url(../images/seccion3-resolucion1023.png);
+    background-size: contain;
+    padding-bottom: 7.3rem;
+  }
+  .alimentacion-titulo {
+    font-size: 1.8rem;
+    margin-right: 13rem;
+  }
+  .alimentacion-texto1, .alimentacion-texto2 {
+    margin-right: 1rem;
+    max-width: 450px;
+    font-size: 1.2rem;
+  }
+  .boton-dietas {
+    margin-right: 12rem;
+    margin-top: 4rem;
+  }
+  .seccion4 {
+    background-image: url(../images/comida-resolucion1023.png);
+    background-size: cover;
+    font-size: 1.2rem;
+    padding-inline: 1rem;
+  }
+  .seccion4-titulo {
+    padding-top: 2rem;
+  }
+  .seccion4-titulo2, .seccion4-titulo3 {
+    font-size: 1.5rem;
+  }
+  .seccion4-texto1 {
+    max-width: 700px;
+  }
+  .caja-boton-recetas {
+    margin: 0 10rem 3.6rem 0;
+  }
+  .seccion5 {
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  .seccion5-grilla {
+    row-gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccion5-titulo {
+    font-size: 1.8rem;
+  }
+  .seccion5-titulo2, .seccion5-titulo3, .seccion5-titulo4 {
+    font-size: 1.4rem;
+  }
+  .seccion5-texto1, .seccion5-texto2, .seccion5-texto3, .seccion5-texto4 {
+    font-size: 1.1rem;
+  }
+  .seccion5-imagen {
+    max-width: 600px;
+  }
+  .footer-section {
+    font-size: 1rem;
+  }
+  .main-objetivos > section > article > p {
+    font-size: 1.2rem;
+  }
+  .titulo1-objetivos {
+    padding-bottom: 0rem;
+  }
+  .objetivos-h2 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  .main-alimentacion {
+    font-size: 1.2rem;
+  }
+  .alimentacion-h2 {
+    font-size: 1.5rem;
+  }
+  .nav-pages-recetas {
+    max-height: 70px;
+  }
+  .main-recetas {
+    font-size: 1.2rem;
+  }
+  .recetas-h2 {
+    font-size: 1.7rem;
+  }
+  .recetas-h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  .texto2-recetas {
+    padding-top: 0;
+  }
+  .titulo-nutricion, .titulo-adaptacion, .titulo-descubrimiento, .titulo-sostenibilidad {
+    font-size: 1.5rem;
+  }
+  .flex-container-recetas {
+    font-size: 1.1rem;
+  }
+  .flex-container-recetas > div > img {
+    max-width: 300px;
+  }
+  .texto-contacto {
+    font-size: 1.2rem;
+  }
+  .imagen-contacto {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .seccion1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion1-parrafo1 {
+    order: -4;
+  }
+  .seccion1-parrafo2 {
+    order: -3;
+  }
+  .seccion1-imagen {
+    order: -2;
+    max-width: 400px;
+  }
+  .seccion1-parrafo4 {
+    padding-bottom: 1rem;
+  }
+  .seccion2 {
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.5fr;
+    grid-template-areas: "hormonas          .............." "imagen-hormonas   texto-hormonas" "flecha1           .............." "nutrientes        ................" "imagen-nutrientes texto-nutrientes" "flecha2           ................" "rendimiento       ................" "imagen-rendimiento texto-rendimiento";
+    justify-items: center;
+    align-items: center;
+    gap: 0;
+  }
+  .imagen-hormonas, .imagen-nutrientes, .imagen-rendimiento {
+    max-width: 250px;
+  }
+  .flecha1, .flecha2 {
+    padding-top: 1rem;
+    transform: rotate(90deg);
+  }
+  .texto-hormonas, .texto-nutrientes {
+    margin-right: 2.5rem;
+  }
+  .seccion3 {
+    background-image: url(../images/seccion3-resolucion768.png);
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .alimentacion-texto1, .alimentacion-texto2 {
+    max-width: 900px;
+    margin-inline: 4rem;
+    font-size: 1.2rem;
+  }
+  .alimentacion-titulo {
+    font-size: 2rem;
+    margin-inline: 1rem;
+  }
+  .boton-dietas {
+    margin-top: 6rem;
+    margin-inline: 2rem;
+  }
+  .caja-dietas {
+    visibility: hidden;
+  }
+  .seccion4 {
+    background-image: url(../images/comida-resolucion768.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .seccion4-titulo {
+    margin-inline: 1rem;
+    margin-top: 10rem;
+  }
+  .seccion4-texto1 {
+    margin-inline: 8rem;
+  }
+  .seccion4-texto2 {
+    margin-inline: 2rem;
+  }
+  .seccion4-texto3 {
+    text-align: center;
+    margin-inline: 2rem;
+  }
+  .caja-boton-recetas {
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: 1rem;
+  }
+  .seccion5 {
+    margin-top: 7rem;
+  }
+  .seccion5-imagen {
+    max-width: 500px;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-img img {
+    max-width: 450px;
+  }
+  .seccion1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion2-h2 {
+    font-size: 1.7rem;
+  }
+  .texto-hormonas, .texto-nutrientes, .texto-rendimiento {
+    margin-inline: 1.5rem;
+  }
+  .seccion3 {
+    height: 100vh;
+    gap: 1rem;
+    background-image: url(../images/seccion3-resolucion600.png);
+  }
+  .alimentacion-texto1, .alimentacion-texto2 {
+    font-size: 1.2rem;
+  }
+  .boton-dietas {
+    margin-top: 4.5rem;
+  }
+  .seccion4 {
+    background-size: contain;
+    height: 100vh;
+  }
+  .seccion4-titulo {
+    margin-top: 15rem;
+  }
+  .seccion4-texto1 {
+    margin-inline: 5rem;
+  }
+  .seccion5 {
+    margin-top: 15rem;
+    text-align: center;
+  }
+  .caja-beneficios {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-container-recetas {
+    flex-direction: column;
+  }
+  .footer-section-recetas {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .balanced {
+    font-size: 3rem;
+    text-align: center;
+    margin-inline: 1rem;
+  }
+  .hero-img img {
+    width: 350px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+  }
+  .seccion1 {
+    font-size: 1rem;
+  }
+  .seccion2-h2 {
+    font-size: 1.6rem;
+  }
+  .seccion2-h3 {
+    font-size: 1.3rem;
+  }
+  .texto-hormonas, .texto-nutrientes, .texto-rendimiento {
+    font-size: 1rem;
+  }
+  .cierre-nuestros-objetivos {
+    font-size: 1rem;
+    margin-inline: 1rem;
+  }
+  .seccion3 {
+    gap: 1rem;
+    max-height: 523px;
+  }
+  .alimentacion-titulo {
+    font-size: 1.6rem;
+  }
+  .alimentacion-texto1, .alimentacion-texto2 {
+    font-size: 1rem;
+    margin-inline: 1rem;
+  }
+  .boton-dietas {
+    margin-top: 4.2rem;
+    font-size: 0.8rem;
+  }
+  .seccion4-titulo {
+    margin-top: 10rem;
+    font-size: 1.6rem;
+  }
+  .seccion4-texto1 {
+    font-size: 1rem;
+    margin-inline: 3rem;
+  }
+  .seccion4-texto2, .seccion4-texto3 {
+    font-size: 1rem;
+    margin-inline: 1rem;
+  }
+  .seccion4-titulo2 {
+    font-size: 1.3rem;
+  }
+  .seccion4-titulo3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .boton-recetas {
+    font-size: 1.3rem;
+  }
+  .seccion5-imagen {
+    max-width: 400px;
+  }
+  .seccion5 {
+    margin-top: 10rem;
+  }
+  .seccion5-titulo {
+    font-size: 1.6rem;
+  }
+  .seccion5-titulo2, .seccion5-titulo3, .seccion5-titulo4 {
+    font-size: 1.3rem;
+  }
+  .seccion5-texto1, .seccion5-texto2, .seccion5-texto3, .seccion5-texto4 {
+    font-size: 1rem;
+  }
+  .titulo1-objetivos, .titulo1-alimentacion, .titulo-principal-contacto {
+    padding-top: 4rem;
+  }
+  .titulo1-recetas {
+    padding-top: 5rem;
+    font-size: 1.8rem;
+  }
+  .main-alimentacion, .main-objetivos > section > article > p {
+    font-size: 1rem;
+  }
+  .objetivos-h2, .alimentacion-h2, .recetas-h2 {
+    font-size: 1.6rem;
+  }
+  .objetivos-h3, .recetas-h3 {
+    font-size: 1.3rem;
+  }
+  .texto-contacto {
+    font-size: 1rem;
+  }
+  .imagen-contacto {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu {
+    padding-bottom: 0;
+  }
+  .hero-img img {
+    width: 280px;
+    transform: none;
+  }
+  .hero-img img:hover {
+    transform: none;
+  }
+  .menu-item-logo {
+    font-size: 2rem;
+  }
+  .seccion1 {
+    font-size: 1rem;
+    padding-inline: 0.3rem;
+  }
+  .seccion1-imagen {
+    max-width: 280px;
+  }
+  .seccion2 {
+    font-size: 1rem;
+  }
+  .cierre-nuestros-objetivos {
+    margin-inline: 0.2rem;
+  }
+  .seccion3 {
+    background-image: url(../images/seccion3-resolucion320.png);
+    background-size: contain;
+    max-height: 100%;
+  }
+  .alimentacion-titulo {
+    font-size: 1.7rem;
+  }
+  .boton-dietas {
+    margin-top: 1.1rem;
+  }
+  .seccion4-titulo {
+    margin-top: 34rem;
+    font-size: 1.7rem;
+  }
+  .seccion4-texto1 {
+    margin-inline: 0.5rem;
+  }
+  .seccion4-texto1, .seccion4-texto2, .seccion4-texto3 {
+    font-size: 1.07rem;
+  }
+  .seccion4-titulo2, .seccion4-titulo3 {
+    font-size: 1.2rem;
+  }
+  .seccion5 {
+    margin-top: 35rem;
+  }
+  .seccion5-imagen {
+    max-width: 250px;
+  }
+  .footer-section, .footer-section-recetas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .titulo1-objetivos, .titulo1-alimentacion, .titulo1-recetas, .titulo-principal-contacto {
+    font-size: 1.8rem;
+  }
+  .recetas-h2 {
+    font-size: 1.4rem;
+  }
+  .recetas-h3 {
+    font-size: 1.3rem;
+  }
+  .main-recetas {
+    font-size: 1rem;
+  }
+  .caja-beneficios {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .titulo-adaptacion, .titulo-descubrimiento, .titulo-nutricion, .titulo-sostenibilidad {
+    font-size: 1.2rem;
+  }
+  .flex-container-recetas {
+    font-size: 1rem;
+    margin-inline: 0;
+    padding-inline: 0.5rem;
+  }
+  .flex-container-recetas > div > img {
+    max-width: 240px;
+  }
+  .imagen-contacto {
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

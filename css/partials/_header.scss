@@ -1,0 +1,44 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.6rem;
+    align-items: baseline;
+    background-image: linear-gradient(to right, #BCD329, #93a80d);
+}
+
+.menu-sitio {
+    display: flex;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    gap: 2rem;
+}
+
+.menu-item-logo {
+    font-family: Philosopher;
+    font-size: 2.5rem;
+
+    a{
+        color: black;
+        transition: .4s;
+        text-decoration: none;
+    } 
+}
+
+.menu-item {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.6rem;   
+
+    a{
+        text-decoration: none;
+        color: black;
+        transition: .4s;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.745);
+        }
+    }
+}
