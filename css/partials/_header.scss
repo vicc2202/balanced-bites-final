@@ -2,7 +2,6 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 3.6rem;
     align-items: baseline;
     background-image: linear-gradient(to right, #BCD329, #93a80d);
 }
@@ -25,6 +24,10 @@
         color: black;
         transition: .4s;
         text-decoration: none;
+
+        &:hover {
+            color: white;
+        }
     } 
 }
 
